@@ -1,0 +1,318 @@
+/* --------------------------------------------------------------
+9.0 Widgets
+-------------------------------------------------------------- */
+
+.widget-area {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	font-size: 32px;
+	position: relative;
+	-webkit-backface-visibility: hidden;
+}
+
+.widget-area a {
+	font-size: 16px;
+	line-height: 1.5;
+
+	@include viewport(mm) {
+		font-size: 22px;
+	}
+
+	@include viewport(mxl) {
+		font-size: 26px;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.widget-area aside {
+	margin-bottom: 30px;
+
+	opacity: 0;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+	position: relative;
+	left: -10px;
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+    @include viewport(mm) {
+		margin-bottom: 50px;
+	}
+
+	@include viewport(mxl) {
+		margin-bottom: 55px;
+	}
+}
+
+.widget-area aside:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.widget-area aside .widget-title,
+.widget-area aside .widgettitle,
+.widget-area .widget-grofile h4 a {
+	font-size: 18px;
+	text-transform: uppercase;
+
+	color: #fff;
+	font-family: $font-body;
+    line-height: 1.6;
+    position: relative;
+    margin-bottom: 20px;
+
+    @include viewport(mm) {
+    	font-size: 22px;
+	}
+
+	@include viewport(mxl) {
+		font-size: 26px;
+	}
+}
+
+.widget-area .textwidget p {
+	margin-bottom: 15px;
+}
+
+.widget-area aside ul {
+    margin: 0 0 0 0;
+}
+
+.widget-area aside ul.sub-menu,
+.widget-area aside .children {
+    margin: 4% 0 0 20px;
+}
+
+.widget-area aside ul.sub-menu li:last-child,
+.widget-area aside .children li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    border-bottom: none;
+}
+
+.widget-area aside li {
+	font-size: 16px;
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 10px;
+	padding-bottom: 0;
+	line-height: 0;
+    list-style: none;
+    position: relative;
+
+    @include viewport(mm) {
+		font-size: 22px;
+	}
+
+	@include viewport(mxl) {
+		font-size: 26px;
+	}
+}
+
+.widget-area aside li ul li {
+	list-style: circle;
+}
+
+.widget-area aside li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#calendar_wrap {
+	background: #fff;
+	border-right: none;
+	border-bottom: none;
+	color: $black;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px -1px;
+}
+
+#wp-calendar {
+	font-size: 16px;
+	margin: 0;
+	max-width: 100%;
+}
+
+#wp-calendar caption {
+	text-align: center;
+padding: 5px 10px;
+	font-weight: bold;
+}
+
+#wp-calendar tr th, #wp-calendar tr td {
+	text-align: center
+}
+
+#wp-calendar tr th {
+	background: $black;
+	color: #fff;
+	margin: -10px -10px 10px -10px;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+#wp-calendar tbody tr td {
+	padding: 2px 0;
+	border-right: solid 1px #f3f3f3;
+	border-top: solid 1px #f3f3f3;
+}
+
+#wp-calendar tfoot td {
+	border-top: solid 1px #f3f3f3;
+	border-right: solid 1px #eee;
+	padding: 7px 0 5px 0;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+#wp-calendar a {
+	color: $black;
+
+	&:hover {
+		color: $accent;
+	}
+}
+
+.widget_rss {
+	li {
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	li .rsswidget {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.rss-date, cite {
+		font-size: 14px;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 10px 0;
+		color: #fff;
+		font-weight: 700;
+		padding: 10px 0;
+	}
+	.rssSummary {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}
+
+.site-footer li .rsswidget {
+	color: #fff;
+
+	&:hover {
+		opacity: .9;
+	}
+}
+
+.textwidget {
+	color: rgba(255,255,255,.7);
+	font-size: 16px;
+
+	@include viewport(mm) {
+		font-size: 22px;
+	}
+}
+
+.widget-grofile {
+	position: relative;
+}
+
+.widget .grofile-thumbnail {
+	max-width: 90px;
+	width: 90px;
+	display: block;
+	vertical-align: top;
+	border-radius: 100px;
+	margin: 0 auto 10px auto;
+}
+
+.grofile-meta {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.widget-area .widget-grofile h4 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	line-height: .9;
+	text-align: center;
+
+	a {
+		color: $black;
+
+		&:hover {
+			color: $gray;
+		}
+	}
+}
+
+.widget-area .grofile-meta + h4 {
+	display: none;
+}
+
+.widget-area .grofile-links {
+	margin-bottom: 20px;
+}
+
+.widget-area .grofile-links + p,
+.widget-area .grofile-meta + p {
+	margin-bottom: 0;
+}
+
+aside.jetpack_subscription_widget {
+	background: #ecf1f7;
+	padding: 20px;
+
+	@include viewport(mm) {
+		padding: 0;
+	}
+
+	p {
+		margin-bottom: 15px;
+		font-size: 15px;
+	}
+
+	h2.widget-title {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+
+	.success p:last-child {
+		margin-bottom: 0;
+	}
+
+	#subscribe-submit input,
+	#subscribe-email input {
+		font-size: 16px;
+		padding: 10px 12px;
+		width: 100%;
+	}
+
+	#subscribe-submit {
+		margin-bottom: 0;
+	}
+}
+
+.site-footer aside.jetpack_subscription_widget {
+	background: none;
+	padding-right: 4%;
+}

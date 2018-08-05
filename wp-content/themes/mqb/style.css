@@ -1,0 +1,613 @@
+.about {
+background-color:#f4f4f4;
+padding:5px 10px;		
+font-size:13px;
+line-height:18px;
+width:160px;
+-webkit-border-bottom-right-radius:5px;
+-webkit-border-bottom-left-radius:5px;
+-moz-border-radius-bottomright:5px;
+-moz-border-radius-bottomleft:5px;
+}
+
+.about:hover {
+background-color:#f7f7f7;
+}
+
+.input {
+height:60px;
+padding:5px 7px;
+}
+
+.me {
+border:1px solid #000;
+margin:0 5px 5px 0;
+}
+
+.thumbnail {
+filter:alpha(opacity=85);
+-moz-opacity:0.85;
+-khtml-opacity: 0.85;
+opacity: 0.85;
+margin-bottom:10px;
+}
+
+.thumbnail:hover {
+filter:alpha(opacity=100);
+-moz-opacity:1;
+-khtml-opacity: 1;
+opacity: 1;
+}
+
+
+/*  
+Theme Name: MQB
+Theme URI: http://www.maiq.info/mqb-free-wordpress-theme/
+Description: Widget ready theme with nice design and simple banner management.
+Author: MaiQ
+Author URI: http://maiq.info/
+Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, three columns, valid XHTML, valid CSS
+Version: 1.1
+
+	MQB v1.1
+	 http://maiq.info/
+	This theme was designed and built by Maiq,
+	whose blog you will find at http://maiq.info/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+/* GENERAL TAGS */
+* {
+margin:0;
+padding:0;
+}
+
+
+body {
+font-family:"Gill Sans", "Gill Sans MT", "Century Gothic", Arial, Helvetica,'Times New Roman',Times,serif;	
+font-size:14px;
+font-weight:400;
+color:#000;
+}
+
+	
+h1,h2 {
+font-size:18px;
+}
+
+h3 {
+font-size:20px;
+line-height:25px;
+font-weight:200
+
+}
+h4 {
+font-size:14px;
+}
+h5 {
+font-size:10px;
+color:#7f7f7f;
+padding-left:1px;
+font-weight:400;
+}
+
+a {
+color:#000;
+text-decoration:none;
+}
+
+a:hover {
+}
+
+pre, code {
+	font-family:"Courier New", Courier, monospace;
+	color:#2175BC;
+	background:#fbfbda;
+}
+pre {
+	padding:0 2em 1.7em 2em;
+	background:#fbfbda;
+	border:1px solid #B4C24B;
+	overflow:auto;
+	width: 50%;
+	width /**/:auto;
+}
+pre strong { background:#efc }
+blockquote {margin:15px; font-family: "Gill Sans","Gill Sans MT", "Century Gothic", "Trebuchet MS", Arial ,Times; text-align:left; font-size:14px; line-height:22px; margin-left:0; font-weight:200; text-align:center; padding:5px 20px; border:1px dashed #eae5e5; background-color:#f4f4f4;}
+
+blockquote strong {font-size:10px; text-transform:uppercase; font-weight:bold;}
+
+
+#wrap{
+width:100%;
+margin:0;
+padding:0;
+}
+
+/* HEADER */
+#header{
+margin:0;
+padding:0;
+width:100%;
+height:100px;
+background-image:url(http://www.phillipchan.org/images/headerbg.jpg);
+background-repeat:repeat-x;
+
+}
+#headone{
+float:left;
+width:62%;
+height:90px;
+}
+#headone  h1{
+font-size:2em;
+padding:00px 15px 40px 350px;
+color:#930000;
+}
+#headone h2{
+padding:15px 0px 0px 20px;
+color:#b60e52;
+font-size:16px;
+	}
+#headtwo{
+float:right;
+
+}
+/* MENU */
+ul#menu{
+padding:10px;
+color:#f5f5f5;
+list-style-type:none;
+margin-bottom:10px;
+
+}
+ul#menu li {
+	float:left;
+	}
+ul#menu li a {
+	padding:0 15px;
+	display:block;
+	color:#ffffff;
+	margin-right:2px;
+	font-weight:200;
+        font-size:10px;
+        text-transform:uppercase;
+	}
+ul#menu li a:hover {
+	padding:0 15px;
+	display:block;
+	color:#4995c0;
+	background:#fff;
+	margin-right:2px;
+	font-weight:200;
+	}
+/* CONTAINER */
+#container{
+width:1010px;
+margin:0 auto;
+padding-left:20px
+}
+
+
+
+#container li {
+line-height:1.5em;
+margin-top:3px;
+}
+
+
+/* MAIN CONTENT */
+#content {
+float:left;
+margin:26px -20px 0 0;
+width:580px;
+overflow:hidden;
+}
+#content img{
+border:0px;
+}
+
+/* POSTS */
+.post {
+margin:0 0 10px;
+
+}
+.post h2 {
+line-height:1.6em;
+}
+.post h2 a {
+width:100%;
+display:block;
+outline:none;
+font-size:26px;	
+font-weight:200;
+margin-bottom:15px;
+margin-top:15px;
+font-family: "Gill Sans", "Gill Sans MT", "Century Gothic", Arial;
+color:#257cc0;	
+}
+.post img {
+	
+	
+}
+.post .entry {
+line-height:1.5em;
+overflow:hidden;
+}
+.post .entry p {
+margin:10px 0 10px;
+}
+.post .entry p a {
+font-weight:100;
+font-size:14px;
+
+color:#000080;
+border-bottom:1px #333 dotted;
+}
+
+.post .entry li a {
+font-weight:100;
+font-size:14px;
+
+color:#000080;
+border-bottom:1px #333 dotted;
+}
+
+
+.post .entry p a:hover {
+color:#483D8B;
+}
+
+.entry h3 {
+margin:1em 0;
+font-weight:200;
+font-size:20px;
+color:#257CC0;
+}
+.entry ul {
+margin:0 1.3em;
+line-height:18px;
+}
+.entry li a {
+color:#333;
+font-weight:700;
+}
+.entry ul li {
+padding-left:10px;
+margin-bottom:10px;
+margin-left:10px
+line-height:22px;
+}
+.entry ol {
+margin:0 1em 0 3em;
+}
+.entry ol li {
+margin:0 0 7px;
+}
+.entry table tr {
+padding:15px 0;
+}
+.entry table tr.alt {
+background:#eee;
+}
+.postMain {
+overflow:hidden;
+margin-bottom:15px;
+}
+.postMeta {
+background:url(images/dot.gif) repeat-x left center;
+text-transform:uppercase;
+font-size:11px;
+text-align:right;
+margin-bottom:5px;
+}
+.postMeta span.date {
+background:#FFF;
+color:#7F7F7F;
+padding:0 2px 0 4px;
+}
+.postMeta span.comments {
+background:#FFF url(images/user.gif) no-repeat left center;
+padding-left:15px;
+margin-left:6px;
+padding-right:6px;
+}
+.postMeta span.comments a,.postMeta span.date a {
+font-size:14px;
+color:#555;
+margin-left:5px;
+}
+img.wp-smiley {
+	border:none;
+	background: none;
+        padding:0;
+	margin:0 2px;
+        vertical-align:0;
+}
+#more {
+color:#7F7F7F;
+font-size:11px;
+text-transform:uppercase;
+margin-bottom:15px;
+margin-top:15px;
+text-align:right;
+	
+}
+#more p,#more img {
+vertical-align:middle;
+}
+#more a img {
+border:none;
+margin:0 0 3px 2px;
+}
+/* Sidebar */
+#search {
+margin-bottom:20px;
+}
+#search input {
+vertical-align:middle;
+}
+#search #s {
+font-size:1.1em;
+border:1px solid #BBB;
+padding:1px 2px;
+margin-right:3px;
+width:220px;
+}
+.sidebar_links h3 {
+margin-bottom:5px;
+}
+.sidebar_links ul li {
+color:#000;
+line-height:1.4em;
+
+padding:2px 0 2px;
+}
+.sidebar_links img {
+border:0;
+}
+.side_content {
+margin:0 0 20px;
+}
+.side_content h3 {
+margin-bottom:5px;
+font-family: "Gill Sans",  "Gill Sans MT", "Century Gothic", Arial;
+font-size:18px;
+font-weight:normal;
+color:#257cc0;
+}
+.rss_links h3 {
+margin-bottom:5px;
+}
+.rss_links {
+margin-bottom:20px;
+}
+.rss_links ul li {
+background:url(images/rss.gif) no-repeat 0 3px;
+color:#7F7F7F;
+line-height:1.2em;
+border-top:1px solid #BBB;
+padding:3px 0 4px 16px;
+}
+.user_links h3 {
+margin-bottom:5px;
+}
+.user_links {
+margin-bottom:20px;
+}
+.user_links ul li {
+background:url(images/user.gif) no-repeat 0 3px;
+color:#7F7F7F;
+line-height:1.2em;
+border-top:1px solid #BBB;
+padding:3px 0 4px 16px;
+}
+#sidebar_one ul {
+list-style:none;
+margin:8px 0 4px;
+}
+#sidebar_one a {
+font-weight:400;
+font-size:10px;
+font-family:"Gill Sans", "Gill Sans MT", "Century Gothic", Arial;
+text-transform:uppercase;
+color:#000;
+}
+#sidebar_one {
+color:#000;
+float:left;
+margin:25px 0 0 40px;
+width:180px;
+line-height:1.1em;
+font-size:11px;
+border-left:1px solid #eaeaea;
+padding-left:10px;
+font-family:"Gill Sans", "Gill Sans MT", "Century Gothic", Arial, calibri, tahoma;
+font-weight:200;
+line-height:16px;
+}
+#sidebar_one p {
+color:#000;
+}
+#sidebar_one ul {
+list-style:none;
+margin:8px 0 4px;
+}
+#sidebar_one img {
+border:0;
+}
+#sidebar_two {
+float:left;
+width:180px;
+margin:23px 0 0 10px;
+padding-left:10px;
+border-left:1px solid #eaeaea;
+font-size:12px;
+font-family:"Gill Sans", "Gill Sans MT", "Century Gothic", Arial, calibri, tahoma;
+line-height:16px;
+font-weight:200;
+color:#000;
+}
+#sidebar_two p {
+color:#000;
+}
+#sidebar_two ul {
+list-style:none;
+margin:8px 0 4px;
+}
+#sidebar_two img {
+border:0;
+}
+
+#sidebar_two a {
+font-size:10px;
+font-family:"Gill Sans", "Gill Sans MT", "Century Gothic",arial;
+text-transform:uppercase;
+font-weight:400;
+color:#000;
+}
+
+
+
+/* COMMENTS */
+#comments {
+width:435px;
+padding:12px 0 0;
+}
+#comments h3,h3#respond {
+color:#555;
+margin-bottom:7px;
+}
+ol.commentlist {
+color: #666;
+list-style-type: none;
+margin: 0;
+margin-top: 1.5em;
+padding: 0;
+}
+.commentlist li {
+margin-bottom: 2em;
+padding: 0.5em 1em;
+margin-bottom:7px;
+}
+.alt2 {
+background: #eaeaea;
+padding: 0.5em;
+color:#000;
+font-weight:200;
+}
+.alt1 {
+background: #f3f3f3;
+padding: 0.5em;
+color:#000;
+font-weight:200;
+}
+p.nocomments {
+margin:0 12px 0 7px;
+}
+p.nocomments a {
+color:#ddd;
+font-weight:200	;
+text-decoration:underline;
+}
+p.nocomments a:hover {
+color:#FFF;
+}
+#commentform p {
+margin:1em 0;
+}
+#commentform p a {
+font-weight:200;
+}
+#author,#email,#url,#comment {
+font:1.1em arial,helvetica,verdana,sans-serif;
+border:1px solid #BBB;
+padding:2px;
+}
+#comment {
+width:458px;
+overflow:auto;
+}
+#commentform p small {
+font-size:10px;
+color:#7F7F7F;
+}
+/* footer */
+#footer {
+padding-top:10px;
+padding-bottom:60px;
+text-align:center;
+background:#2b2b2b;
+}
+#footer ,#footer a {
+font-family:"Gill Sans", "Gill Sans MT", "Century Gothic", Arial;
+font-size:13px;
+font-weight:200;
+color:#FFF;
+}
+#footer a:hover{
+text-decoration:underline;
+}
+/* fixes */
+.fix:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+.fix {
+display:inline-block;
+}
+* html .fix {
+height:1%;
+}
+.fix {
+display:block;
+}
+.ez100{
+float:left;
+margin:1px;
+border:1px solid #eaeaea;
+}
+.ez100:hover {
+border:1px solid #ccc;
+}
+/** WORDPRESS CSS */
+.clear {
+clear:both;
+}
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.alignleft {
+   float: left;
+   margin: 0 10px 10px 0;
+}
+.alignright {
+   float: right;
+   margin: 0 0 10px 10px;
+}
+.wp-caption {
+   border: 1px solid #ccc;
+   text-align: center;
+   background-color: #f3f4f0;
+   padding-top: 4px;
+}
+.wp-caption img {
+   float: none;
+   margin: 0;
+   padding: 0;
+   border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+   font-size: 11px;
+   line-height: 17px;
+   padding: 0px;
+   margin: 0px;
+}		

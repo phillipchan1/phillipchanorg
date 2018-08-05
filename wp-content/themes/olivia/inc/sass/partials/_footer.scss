@@ -1,0 +1,90 @@
+/* --------------------------------------------------------------
+15.0 Footer
+-------------------------------------------------------------- */
+
+.site-footer {
+	color: $black;
+	padding: $baseline*2 0;
+	font-size: 15px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+
+	@include viewport(mm) {
+		font-size: 16px;
+	}
+
+	@include viewport(mxl) {
+		padding-bottom: 60px;
+	}
+}
+
+.site-footer a {
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .2s ease-in-out;
+
+	&:hover {
+		color: $black;
+	}
+}
+
+.site-description {
+	color: $black;
+	padding: 5px;
+	text-align: center;
+
+	@include viewport(mxl) {
+		text-align: right;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.footer-padding {
+	padding-top: 15%;
+	-webkit-transition: .2s ease-in;
+	-moz-transition: .2s ease-in;
+	transition: .2s ease-in;
+	opacity: 0;
+}
+
+.footer-bottom {
+	border-top: 1px dashed #efefef;
+	padding-top: $baseline * 2;
+
+	@include viewport(mxl) {
+		padding-top: 60px;;
+	}
+}
+
+.footer-navigation {
+	display: inline-block;
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin-right: 20px;
+	}
+}
+
+.site-info {
+	color: $black;
+	text-align: center;
+	padding: 5px;
+
+	@include viewport(mxl) {
+		text-align: left;
+	}
+
+    a {
+    	font-weight: 400;
+    	text-transform: none;
+    }
+}

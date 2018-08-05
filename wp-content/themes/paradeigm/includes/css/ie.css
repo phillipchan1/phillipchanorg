@@ -1,0 +1,17 @@
+.masonry-index .post-entry {
+	opacity: 1 !important;
+}
+
+#primary figure .featured-info .info-wrapper {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 40%;
+}
+
+.featured-content figure .featured-info .info-wrapper {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 25%;
+}

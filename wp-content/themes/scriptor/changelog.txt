@@ -1,0 +1,17 @@
+*** Scriptor Changelog ***
+
+09 Dec 2013 - Version 1.0
+	First Release
+	
+16 Dec 2013 - Version 1.1
+	Responsive Bugfix
+	Add new newspaper template
+	Update default.po
+	
+15 Jan 2014 - Version 1.2
+	Sub-navigation support added
+	Add new option for hide sidebar
+	Show sidebar in mobile devices
+	
+27 Jan 2014 - Version 1.3
+	Fix bug with post_thumbnail in page

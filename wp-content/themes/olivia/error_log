@@ -1,0 +1,4 @@
+[23-Jan-2017 17:21:23 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/olivia/index.php on line 8
+[17-Mar-2017 23:54:45 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/olivia/404.php on line 8
+[23-Mar-2017 17:39:52 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/olivia/404.php on line 8
+[28-Mar-2017 14:19:55 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/olivia/404.php on line 8
