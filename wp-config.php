@@ -29,7 +29,7 @@ define('DB_USER', 'wordpress');
 define('DB_PASSWORD', 'wordpress');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql://b14e2bcf5ebe1b:b15ca5d9@us-cdbr-iron-east-01.cleardb.net/heroku_3852a8f6ff63c2a?reconnect=true');
+define('DB_HOST', 'db:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
