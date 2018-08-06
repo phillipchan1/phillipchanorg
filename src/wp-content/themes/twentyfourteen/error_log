@@ -1,4 +1,0 @@
-[28-Nov-2016 10:53:38 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/twentyfourteen/index.php on line 17
-[28-Nov-2016 11:30:48 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/twentyfourteen/index.php on line 17
-[28-Nov-2016 21:18:15 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/twentyfourteen/index.php on line 17
-[06-Mar-2017 07:30:57 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/phillipc/public_html/wp-content/themes/twentyfourteen/404.php on line 10
