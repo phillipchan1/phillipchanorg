@@ -1,0 +1,44 @@
+*** Paradeigm Changelog ***
+
+Jan 19 2015 - Version 1.2
+	CHANGED:
+	* functions.php
+		- added "get_option( 'hypha_customizer_featured_content_items' )" to hypha_ignore_featured_posts() function
+	* featured-content.php
+		- added tags to the timestamp. Gives ability to target date and read time separately
+	* jetpack.php
+		- set infinite scroll wrapper option to false. Better infinite scroll loading.
+	* custom.js
+		- added post-entry fade in when infinite scroll loads posts. This is tied to the changes in jetpack.php.
+	* content-image.php
+		- added sub container to show in posts indexes. This allows to display Jetpack sharing links. Excerpts are hidden in style.css.
+	* style.css - various small changes
+		
+			
+Oct 6 2014 - Version 1.1
+	CHANGED:
+	* functions.php
+		- renamed hyhypha_customizer_color_accent to hypha_customizer_color_accent
+		- added hypha_mce_buttons_2, hypha_tiny_mce_before_init : moves dropcaps and introduction
+			to a text editor selection instead of fixed into the theme
+	* customizer.php
+		- renamed hyhypha_customizer_color_accent to hypha_customizer_color_accent
+		- added Featured Content Items - sets how many items to show in the slider
+	* header.php - renamed site-title from <span></h1> to <span></span>
+	* necktie.php - fixed "Posts Page Titles" problem where "Latest Articles" text can't be changed from within customizer
+	* metabox.php - fixed problem with page subtitles not showing. Added hypha_save_page_subtitles_meta_box action.
+	* editor-style.css - added dropcaps, introduction, highlights
+	* style.css - added dropcaps, introduction, highlights. Added z-index to main-wrapper.
+	* content-aside.php, content-image.php, content-link.php, content-page.php, content.php - removed get_excerpt to show post introduction.
+		This is replaced by manually selecting Introduction style in text editor.
+	* custom.js - changed masonry post-entry "animated fadeIn" CSS to jquery fadeTo. Prevents unwanted z-index overlapping for fullscreen iframes.
+	* featured-content.php - added customizer value for posts per page slider option
+	* updated languages folder .pot and .mo to reflect current changes
+	
+	ADDED:
+	* changelog.txt
+
+
+Sept 5 2014 - Version 1.0
+	
+	* First Release

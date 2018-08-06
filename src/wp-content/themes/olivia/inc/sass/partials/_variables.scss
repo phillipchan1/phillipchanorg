@@ -1,0 +1,32 @@
+//
+// Partial: variables
+// ==================
+//
+// Global variables of all kinds
+//
+
+
+// Group: Unit Sizes
+$base-font-size: (16/16)*100%;
+$baseline-unitless: 24/(16*($base-font-size/100%));
+$baseline: $baseline-unitless * 1rem;
+
+// fonts
+$font-body: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-title: 'Abril Fatface', cursive;
+
+// Group: Colors
+$bg-color: #fff;
+$soft-gray: #aaa;
+$gray: #62707c;
+$black: #343c40;
+$accent: #E0B853;
+$drawerBG: #141618;
+
+// Group: Grid config
+$toast-grid-namespace: "row";
+$toast-grid-column-namespace: "col";
+$toast-col-groups: 12;
+$toast-gutter-width: $baseline * 4;
+$toast-pushes: true;
+$toast-pulls: true;
